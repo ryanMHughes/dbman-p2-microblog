@@ -64,3 +64,19 @@ create table if not exists follows (
         foreign key (followerId) references user(userId),
         foreign key (followedId) references user(userId)
 );
+
+-- adding data for app demo
+INSERT into user (username, password, firstName, lastName)
+VALUES ('aidenhamm', 'firstPassword', 'Aiden', 'Hammond');
+
+INSERT into user (username, password, firstName, lastName)
+VALUES ('ryanhugh', 'secondPassword', 'Ryan', 'Hughes');
+
+INSERT into user (username, password, firstName, lastName)
+VALUES ('neilarms', 'thirdPassword', 'Neil', 'Armstrong');
+
+INSERT into user (username, password, firstName, lastName)
+VALUES ('alberteins', 'fourthPassword', 'Albert', 'Einstein');
+
+INSERT into user (username, password, firstName, lastName)
+VALUES ('johnglen', 'fifthPassword', 'John', 'Glenn');
